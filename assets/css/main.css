@@ -1,0 +1,171 @@
+header {
+  text-align: center;
+  background-image: url("../img/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #eee;
+  position: relative;
+  height: 525px; }
+  header .title-group {
+    position: relative;
+    top: 120px; }
+  header .nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 260px; }
+    header .nav .nav-box {
+      margin: auto;
+      display: inline; }
+    header .nav .balloon {
+      margin-left: 20px;
+      display: inline-block;
+      height: 150px;
+      width: 320px;
+      position: relative;
+      bottom: 30px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: .4em;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      color: #333;
+      text-align: left;
+      padding: 15px;
+      box-sizing: border-box;
+      vertical-align: bottom; }
+      header .nav .balloon:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-right-color: rgba(255, 255, 255, 0.8);
+        border-left: 0;
+        border-bottom: 0;
+        margin-top: -10px;
+        margin-left: -20px; }
+        @media screen and (max-width: 614px) {
+          header .nav .balloon:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-bottom-color: rgba(255, 255, 255, 0.8);
+            border-top: 0;
+            margin-left: -20px;
+            margin-top: -20px; } }
+      header .nav .balloon .balloon-content {
+        height: 120px;
+        width: 290px; }
+
+.typewritter {
+  display: inline-block; }
+  .typewritter h1 {
+    overflow: hidden;
+    border-right: .1em solid orange;
+    white-space: nowrap;
+    letter-spacing: .02em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+    text-align: center;
+    margin: 0 auto; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+
+#xiaomi {
+  margin: auto;
+  margin-right: 0;
+  height: 260px;
+  width: 260px;
+  position: relative;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-name: xiaomi-shake;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+  #xiaomi:hover {
+    cursor: pointer; }
+
+@keyframes xiaomi-shake {
+  0% {
+    left: 0px;
+    top: 0px; }
+  13% {
+    left: -15px;
+    top: 0px; }
+  25% {
+    left: 15px;
+    top: 0px; }
+  38% {
+    left: 0px;
+    top: 0px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
+
+.content {
+  background: url("../img/pattern.png");
+  background-attachment: fixed;
+  background-size: cover; }
+  .content .container {
+    width: 70%; }
+    @media screen and (max-width: 1280px) {
+      .content .container {
+        width: 100%; } }
+    @media screen and (min-width: 1900px) {
+      .content .container {
+        width: 50%; } }
+  .content .block {
+    height: 200px;
+    position: relative;
+    z-index: 1; }
+  .content .article {
+    padding: 5%;
+    box-sizing: content-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); }
+    .content .article a {
+      color: #333; }
+      .content .article a:hover {
+        text-decoration: none;
+        color: #0060f1; }
+    .content .article .title {
+      border-bottom: 2px solid #333; }
+      .content .article .title:before {
+        content: '# '; }
+      .content .article .title:hover {
+        cursor: pointer; }
+    .content .article p {
+      margin-top: 1rem;
+      line-height: 1.8rem;
+      text-indent: 2em; }
+      .content .article p ul {
+        text-indent: 0;
+        line-height: 1rem; }
+
+footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center; }
+  footer .buttom {
+    margin: auto;
+    width: 600px; }
+  footer .links a {
+    text-decoration: none;
+    padding: 10px; }
